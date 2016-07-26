@@ -17,8 +17,7 @@
     </script>
     {% block head_js %} {% endblock head_js %}
 
-    <!--<link rel="stylesheet" href="{% static "css/style.css" %}">
-    <link rel="stylesheet" href="{% static "css/blog.css" %}">-->
+
 </head>
 <body>
 <div class="container">
@@ -34,15 +33,17 @@
             <li><a href="{% url 'logout' %}">Log Out</a></li>
             <li><a href="/magazines/">Magazines</a></li>
             <li><a href="/blog/">Our Blog</a></li>
-            <li><a href="/forum/">Forum</a></li>
+            <li><a href="/products/">Products</a></li>
             {% else %}
             <!--Email Auth-->
             <li><a href="{% url 'register' %}">Register</a></li>
             <li><a href="{% url 'login' %}">Log In</a></li>
+
             {% endif %}
 
-            <!--Paypal-->
-             <li><a href="/products/">Products</a></li>
+            <!--Poll-->
+
+             <li><a href="/forum/">Forum</a></li>
 
 
 

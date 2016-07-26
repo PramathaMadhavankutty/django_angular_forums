@@ -29,7 +29,7 @@
         </div>
         {% if thread.poll %}
             {% csrf_token %}
-            {% include 'forum/poll.html' %}
+            {% include "forum/poll.html" %}
         {% endif %}
 
        {% if user.is_authenticated %}
